@@ -1,0 +1,776 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>How to create a web page</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+         body {
+            padding-top: 70px;
+            font-size: 16px;
+            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        }
+         .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-toggle span.icon-bar {
+    transition: all 0.15s;
+}
+
+.navbar-toggle span:nth-child(2) {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle span:nth-child(3) {
+    opacity: 0;
+}
+
+.navbar-toggle span:nth-child(4) {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed span:nth-child(3) {
+    opacity: 1;
+}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lessons and Assignments<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Lessons.html">Lessons Index</a></li>
+                            <li><a href="Lessons1.html">Lesson 1 - A change in direction</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div> 
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>How to create a web page</h1>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+
+                <p style="">
+                    The purpose of this session to teach you how to build a web page. In our session we will go over the following:
+                    <ul>
+                        <li>General discussion about the web and internet</li>
+                        <li>History of the web and internet </li>
+                        <li>Creating a web page.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Let's talk about the web and the internet :)</h1>
+                <p>
+                    <ul>
+                        <li>What do you know about the "web?" What do you use the web for?</li>
+                        <li>
+                            Do you know how many websites that are actively online in the web?
+                            <ul>
+                                <li>Over 1 billion sites and counting...To see the running count check out <a href="http://www.internetlivestats.com/total-number-of-websites/">running website count</a></li>
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            Do you know what was the first website ever created on the web? <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">info.cern.ch</a>, which was created by Tim Berners-Lee Aug 6, 1991. Tim also invented the world wide web in 1989 (see <a href="https://home.cern/topics/birth-web">The birth of the web</a>).
+                        </li>
+                        <li>
+                            What's the difference between the web and the internet?
+                            <ul>
+                                <li>The web or world wide web is a system of interlinked documents and\or web pages accessible through the internet. It's actually a piece of software that runs on a machine. Pretty cool huh !!!</li>
+                                <li>The internet leverages telephone lines, cables, or wireless connections to connect computers and other devices to the web.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            What's the job demand for anyone that knows at least HTML?
+                            <ul>
+                                <li><a href="https://www.indeed.com/q-HTML-CSS-jobs.html">See Indeed job search results</a></li>
+                                <li><a href="https://www.dice.com/jobs?q=HTML&l=&searchid=7608021399901&stst=">See Dice job search results</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Let's talk about the history and how the internet and the web got started</h1>
+
+
+                <h2>Let's start in the 1950s - Cold War and Sputnik</h2>
+
+                <img class="img-fluid" src="https://qph.ec.quoracdn.net/main-qimg-07656b3063c5a40302d5106195e8fae1-c" />
+
+                </p>
+                <h3>Remember the Cold War???</h3>
+                <table>
+                    <tr>
+
+                        <td style="vertical-align:top"><img class="img-fluid" src="http://static4.businessinsider.com/image/566af320dd089581618b45b3-840-554/002-wnnimage-nuclear-bomb-shelter-pool-1950s-image-james-vaughan.jpg" /></td>
+                        <td><img class="img-fluid" src="https://s-media-cache-ak0.pinimg.com/736x/cf/de/34/cfde34b7d68368fda28776be165f0e4f.jpg" /></td>
+                    </tr>
+                </table>
+                <div>
+                    <h3>Russia launched its first man made satellite into orbit, known as Sputnik</h3>
+                    <div>
+                        <img class="img-fluid" src="https://s-media-cache-ak0.pinimg.com/originals/09/87/27/0987273f7223560ac775be1c922f8f3c.jpg" />
+                    </div>
+                </div>
+
+                <div>
+                    <h3>American fears continue to grow and....</h3>
+                    <div class="row">
+
+                        <div class="col-sm-12"><img class="img-fluid" src="http://filmwaxradio.com/wp-content/uploads/2008/03/poster2.jpg" /></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>The US is losing the race to space!!!</h3>
+                    <div><img class="img-fluid" src="https://dryuc24b85zbr.cloudfront.net/tes/resources/11168162/image?width=500&height=500&version=1448044304702" /></div>
+                </div>
+                <div>
+                    <p>
+                        <h3>Out of growing concern of a Russian attack and the US losing the space race against Russia, our goverment created the Defense Advanced Research Projects Agency(<a href="http://www.darpa.mil/about-us/timeline/where-the-future-becomes-now">DARPA</a>).</h3>
+                        <blockquote>DARPA has owned the critical mission of keeping the United States out in front when it comes to cultivating breakthrough technologies for national security rather than in a position of catching up to strategically important innovations and achievements of others.</blockquote>
+                    </p>
+                </div>
+
+                <!-- 1960's -->
+
+                <h2>1960s - The Internet is born through ARAPNET</h2>
+                <div>
+                    <p>
+                        <div>ARPANET is born which is known as the predecessor to the internet that was created by DARPA.</div>
+                        <div><img class="img-fluid" src="images/BirthOfInternet.jpg" /></div>
+                    </p>
+                    <p>What is ARAPNET? The Advance Research Projects Agency Network or the first private computer network.</p>
+                    <p>ARPANET was designed to facilitate communications between ARPA computer terminals during the 60's, also provided government leaders a way communicate during attacks by Russia. The US Military took interest as well to develop a survivable communication structure in the event of a nuclear attack.</p>
+                    <div><img class="img-fluid" src="https://fictionmachine.files.wordpress.com/2016/05/wargames081.jpg" width="600" /></div>
+
+
+                    <p>
+                        <h3>The concepts that were used developed to implement ARPANET are the foundations of the Internet. Provided below are the some of major concepts that ARPANET was built on:</h3>
+                        <ul>
+                            <li>
+                                <div>"Galactic Network" this idea paved the way for networks and devices to be connected allowing users to share information over the internet.</div>
+                                <div><img class="img-fluid" src="http://simplyknowledge.com/uploads/inventions/internet/images/a-Faint-Idea-Galactic-Network.jpg" /></div>
+                                <div>
+                                    <ul>
+                                        <li><a href="http://internethalloffame.org/inductees/jcr-licklider">Who came up with the Galactic Network???</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.rand.org/pubs/research_memoranda/RM3103.html">"Distributed Communications" model or "hot-potatoe routing"</a>
+                                    <ul>
+                                        <li>Allow communications between computers to continue even if one node goes down, because there's still multiple nodes available to continue communication between multiple users.</li>
+                                        <li>
+                                            <div>How? Networks of unmanned nodes acted as switches, routing information from one node to another to thier final destination.</div>
+                                            <div><img class="img-fluid" src="https://www.rand.org/content/dam/rand/www/external/pubs/research_memoranda/RM3420/fig1.GIF" /></div>
+                                        </li>
+                                        <li>
+                                            <div>The goal was to ensure that a network would surive a major attacked by our enemies.</div>
+                                            <div><img class="img-fluid" src="http://www.islamicinvitationturkey.com/wp-content/uploads/2013/03/khan20130313152015907.jpg" width="600" /></div>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <ul>
+                                    <li><a href="https://www.rand.org/about/history/baran.html">Who created the "Distributed Communications" model???</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="https://www.lifewire.com/packet-switching-on-computer-networks-817938">Packet switching"</a> breaks down data into "packets" before sending across the network. Multiple "packets" are sent separately and then rejoined togeather once all the "packets" has reached your machine. Packet switching provided a more efficient use of a network by increasing the ability for network communications to continue to function regardless of abnormalities (or an attack from Russia :() or network latency.
+
+                                </div>
+                                <div><img class="img-fluid" src="https://www.technologyuk.net/telecommunications/communication-technologies/images/packet_switching_network.gif" /></div>
+                                <ul>
+                                    <li><a href="https://www.wired.com/2012/09/donald-davies/">Who was DONALD DAVIES?</a></li>
+                                    <li><a href="https://www.wired.com/2012/09/what-do-the-h-bomb-and-the-internet-have-in-common-paul-baran/">Who was Paul Baran and who really really created "Packet switching"?</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </p>
+                    <ul>
+                        <li>
+                            <div>The first network experiment linking two computers took place between the TX-2 computer by Lincoln Labs and the Q-32 mainframe operated by the RAND corporations System Development Corporation.</div>
+                            <div>
+                                <img class="img-fluid" src="https://wwwassets.rand.org/etc/rand/designs/common/images/logo-1200.png" width="400" />
+                                <img class="img-fluid" src="https://ece.osu.edu/sites/ece.osu.edu/files/styles/medium/public/media/mitll_0.gif?itok=Je8-l1b6" />
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>1970s - ARAPNET reaches across the pacific and the alantic</h2>
+                    <div>
+                        <p>
+                            <div>ARAPNET expands across the pond from Hawaii to UK and to Norway.</div>
+                            <div><img class="img-fluid" src="images/InternetUK.jpg" /> <img class="img-fluid" src="images/HawaiiInternet.jpg" /> <img class="img-fluid" src="images/NorwayHappy.jpg" /></div>
+                        </p>
+                        <p>Robert Kahn introduces email at the International Computer Communication Conference which increase interest and importance on developing a strong and robust network.</p>
+                        <p>Ray Tomlison created the first email programs called SNDMSG and READMAIL which allowed people to read and respond to emails.</p>
+                        <p>
+                            TCP/IP was created to solve the network strain as more and more computers were added to the network.
+                            <ul>
+                                <li>Transmission Communication Protocol/Internet Protocol</li>
+                                <li>Developed by Vinton Cerf and Robert Kahn</li>
+                                <li>TCP/IP allowed for individual network to stand along such that one network was brought down, it would not cause the collapse of all joined networks.</li>
+                                <li>The ongoing R&D of the TCP/IP protocol eventually lead to the creation of the internet.</li>
+
+                            </ul>
+                        </p>
+                        <p>Linking and organizing information and personal computers begin to emerged</p>
+                        <p>In 74 Ted Nelson advocates for users to be interested into computers, networks and proposes the start of HTML.</p>
+                        <p>In 76 Steve Jobs and Steve Wozniak founds apple and then in 78 Apple launches Apple II.</p>
+                        <p>
+                            In 79 USENET allows users to submit messages to newsgroup and makes electronic communications much easier.
+                            <ul>
+                                <li>Developed by Tom Truscott and Steve Belloin uses a UNIX program that allows files to be sent between networked computers to exchange electronic newsletters between Duke University and UNC through dial-up connections.</li>
+                            </ul>
+                        </p>
+
+                    </div>
+                </div>
+                <div>
+                    <h2>1980's - The Internet begins to take shape and becomes public </h2>
+                    <p>
+                        <div></div>The age of dial-ups begins
+                        <div><img class="img-fluid" src="images/DialUpInProgress.jpg" /></div>
+                    </p>
+                    <p>
+                        Systems like PhoneNet and CSNET begin to emerge for users to establish internet connections to networks like ARPANET and then to Telenet.
+                        <ul>
+                            <li>PhoneNET was created by Dave Farbert and developed and funded by the National Science Foundation.</li>
+                            <li> CSNET system was created to offer an less costly PhoneNet services and it expands the gloal reach of the internet by allowing e-mail communication between US and various countires like the UI, Israel, Germany, France and more.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        ARPANET is split up into MILNET and ARPANET.
+                        <ul>
+                            <li>MILNET servers the needs for the national defense and the military communities</li>
+                            <li>ARPANET is used by academics and researches. This is the first steps towards commercializing the Internet.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        As more users and networks gain access to the Internet, there is a need develop a method of naming and addressing users and host names\networks, then can the Domain Name System.
+                        <ul>
+                            <li>DNS was created to divide the Internet names between host names and usernames. For example: yahoo.com and bhunter@yahoo.com</li>
+                            <li>
+                                ARPANET created six domains
+                                <ul>
+                                    <li>.edu (Education)</li>
+                                    <li>.gov (Government)</li>
+                                    <li>.mil (military)</li>
+                                    <li>.com (commercial)</li>
+                                    <li>.org (other organizations</li>
+                                    <li>.net (network resources)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Tim Berners-Lee invented the world wide web in 1989. To learn more about Tim Berners-Lee, check out
+                        <ul>
+                            <li>
+                                <a href="">ForEveryone.Net (Video)</a>
+                            </li>
+                            <li><a href="http://www.pbs.org/program/for-everyone-net/">ForEveryone.Net (Website)</a></li>
+                        </ul>
+                    </p>
+
+                </div>
+                <div>
+                    <h3>1990s - The Internet get's a bike, but the goverment requires training wheels</h3>
+
+
+                    <p>
+                        HTML (HyperText Markup Language) and URL (Universal Resource Locator) are created.
+                        <ul>
+                            <li>Berners-Lee and his colleagues developed a shared format for hypertext documents which was named as hypertext markup language.</li>
+                            <li>Berners-Less and others created the uniform resource locator which is used as a standard address format that could specify the computer being targeted and the type of information being requested.</li>
+                            <li>HTML and URL increased the interaction between users and networks across the internet.</li>
+                        </ul>
+                        <div><img class="img-fluid" src="images/HTMLImage.jpg" /></div>
+                    </p>
+                    <p>Al Gore sponsors the High Performance Computing Act which establishes the National Research and Education Network.</p>
+                    <p>
+                        As more companies come online such as Yahoo, Amazon, Ebay, Google, and others, the US government steps into to regulate radio and television to the internet.
+                        <ul>
+                            <li>The Communications Decency Act or Telecommunications Reform act was created to regulate the content on the web.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Companies joins the "Online" wave
+                        <ul>
+                            <li>
+                                <div>Amazon launches Amazon.com</div>
+
+                            </li>
+                            <li>Yahoo search engine and Ebay come online</li>
+                            <li>Microsoft Internet Explorer web browser is avaliable</li>
+                        </ul>
+                        <table>
+                            <tr><td><img class="img-fluid" src="images/Amazon.png" /></td><td><img class="img-fluid" src="images/Yahoo.png" /></td><td><img class="img-fluid" src="images/Microsoft.png" /></td></tr>
+                        </table>
+                    </p>
+                    <p>
+                        Towards the end of the 90s, trouble begins for the web:
+
+                        <ul>
+                            <li>The rise of Internet music and video piracy becomes a major concern through websites like Napster.Shawn Fanning, the creator of Napster develops a website that allow users to illegally download much for free.</li>
+                            <li>The first malicious computer virus, called "Melissa virus". The virus was capable of automatically copying and sending itself to all email address listed in an infected users address book.</li>
+                        </ul>
+                        <div><img class="img-fluid" src="images/Naspter.jpg" /></div>
+                    </p>
+                </div>
+                <div>
+                    <h3>2000's - The internet revolution continues, without it's fare share of bumps and bursis </h3>
+                    <p>The internet burst its bubble...See <a href="http://time.com/3741681/2000-dotcom-stock-bust/">Dotcom Stock Bust</a>.</p>
+                    <p>
+                        Google becomes the largest search engine in the world.
+                        <div><img class="img-fluid" src="images/Google.png" /></div>
+                    </p>
+                    <p>The first offical instance of internet voting takes place during a Democratic party primary in Arizona.</p>
+                    <p>Recording Industry Association of America wins its lawsuit against Napster and then Napster is shut down. That put a damper on college students 😔</p>
+                    <p>
+                        <div>Spam, unsolicited junk mail becomes a problem and accounts for over half of all e-mail messages sent and received. To combat the span and unsolicited junk mail, congress pass anti-span legislation, but the scourge of unsolicited emails continues.</div>
+                        <div><img class="img-fluid" src="images/Google-and-Spam.jpg" /></div>
+                    </p>
+                    <p>Mobile and Tables offers different ways to view the web.</p>
+                    <p>WiFi networks becomes more avaliable</p>
+                    <p>More and more retail  stores begin to replace their store fronts for online business.</p>
+                    <p>Security becomes a greater concern as more and more devices are connected to the internet.</p>
+                    <p>
+                        <div>Python, C#, Ruby on Rails, PHP and other languages help improve the user experience on the web.</div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><a href="https://www.python.org/"><img class="img-fluid" src="images/PythonLanguage.png" /></a></td>
+                                    <td><a href="https://docs.microsoft.com/en-us/dotnet/csharp/csharp"><img class="img-fluid" src="images/CSharp.jpg" /></a></td>
+                                    <td><a href="http://rubyonrails.org/"><img class="img-fluid" src="images/RubyOnRails.jpg" /></a></td>
+                                    <td><a href="https://secure.php.net/"><img class="img-fluid" src="images/PHP.jpg" /></a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </p>
+                    <p>
+                        "The Cloud" gains traction and market share.
+                        <div>
+                            <table><tr><td><img class="img-fluid" src="images/Azure.png" /></td><td><img class="img-fluid" src="images/AWS.jpg" /></td></tr></table>
+                        </div>
+                    </p>
+                    <p>
+                        Skynet is here....IOT and robots become new areas of studies.
+                        <div>
+                            <img class="img-fluid" src="images/Skynet.jpg" />
+                        </div>
+                    </p>
+                    <p>What's next for the internet? What websites do you want to build?</p>
+                </div>
+                <div>
+                    <h1>Let's talk about how web pages work</h1>
+                    <p>
+                        How do we access websites? Using browsers. What is a browser?
+                        <ul>
+                            <li>Its a piece of software that allows you to view web content from your desktop, laptop or phone.</li>
+                            <li>
+                                Browsers comes in many different flavors:
+                                <table>
+                                    <tr>
+                                        <td style="text-align:center"><a href="https://www.google.com/chrome/index.html">Chrome</a></td>
+                                        <td style="text-align:center"><a href="https://www.mozilla.org/en-US/">Firefox</a></td>
+                                        <td style="text-align:center"><a href="https://www.apple.com/safari/">Safari</a></td>
+                                        <td style="text-align:center"><a href="https://www.microsoft.com/en-us/download/internet-explorer.aspx">Internet Explorer</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://www.google.com/chrome/index.html"><img class="img-fluid" src="http://cdn.makeuseof.com/wp-content/uploads/2011/05/00_chrome_icon.jpg?x59455" width="200" /></a></td>
+                                        <td><a href="https://www.mozilla.org/en-US/"><img class="img-fluid" src="https://www.digitaltrends.com/wp-content/uploads/2011/03/firefox-icon.jpg" width="200" /></a></td>
+                                        <td><a href="https://www.apple.com/safari/"><img class="img-fluid" src="images/SafariIcon.jpg" width="200" /></a></td>
+                                        <td><a href="https://www.microsoft.com/en-us/download/internet-explorer.aspx"><img class="img-fluid" src="images/internet_explorer.png" width="200" /></a></td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        To access an website, we have to type in the url of a website, like www.espn.com, facebook.com or https://ironmeninc.com/
+                    </p>
+                    <p>
+                        What is a URL?
+                        <ul>
+                            <li>URL is an acronym for Uniform Resource Locator and is a reference (an address) to a resource on the Internet. <a href="https://www.ibm.com/support/knowledgecenter/en/SSGMCP_5.1.0/com.ibm.cics.ts.internet.doc/topics/dfhtl_uricomp.html">Find out what Waston's parent says about URL</a></li>
+                            <li>
+                                A URL has four main components:
+                                <ul>
+                                    <li>
+                                        Scheme - defines the protocol, for example:
+                                        <ul>
+                                            <li>http (HyperText Transfer Protocol) - used to serve up hyper text documents.</li>
+                                            <li>
+                                                https (HTTP over Transport Layer Security)
+                                                <ul>
+                                                    <li>Its a secure version of HTTP (HTTP over Transport Layer Security).</li>
+                                                    <li>Provides protection of the privacy and integrity of the exchanged data.</li>
+                                                    <li>HTTPS uses <a href="https://technet.microsoft.com/en-us/library/cc758348(v=ws.10">certificates</a> to secure your information on websites</li>
+                                                </ul>
+
+                                            </li>
+                                            <li><a href="https://msdn.microsoft.com/en-us/library/aa767731(v=vs.85).aspx">File</a>, <a href="https://www.techopedia.com/definition/1872/file-transfer-protocol-ftp">FTP</a> and <a href="https://www.techopedia.com/definition/29927/secure-ftp-server-sftp-server">FTPS</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        A host - identifies domain that holds the resource. For example: www.espn.com, microsoft.com
+                                    </li>
+                                    <li>Path - identifies the specific resource or page in the host that the user wants to access.</li>
+                                    <li>Query - if one is used, its used to search for data within the host or enable a functionality.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+
+                    <p>Let's see what happens when you browse to a website? <a href="http://www.bbc.co.uk/guides/z3tbgk7#zgprcdm">How does the internet work?</a></p>
+                    <p>When you type in a url, like www.espn.com a request is sent out to www.espn.com to get content.This means your requesting content from the website espn.com.</p>
+                    <p>espn.com is located a web server.</p>
+                    <p>espn.com is a domain name. A domain name is a user-friendly name that is translated into the IP address of the web server where a website is hosted.</p>
+                    <p>What translates a user-friendly name to an IP address? Domain Name System. </p>
+                    <p>Domain Name System - is set a of standards for how computers exchange data on the Internet. A DNS will lookup and translate espn.com to the IP address of the web server where espn.com is hosted.</p>
+                    <p>Web servers (and other types) uses an IP address to identify each other.</p>
+                    <p>The actual IP is a unique string of numbers that is separated by periods that identifies each computer using the set of standards to communicate over a network.</p>
+                    <p>
+                        Let's check out the IP address of espn.com:
+                        <ul>
+                            <li>Open a command window or search for the program Command Prompt. See <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">How to open a command prompt (on Windows XP, 7,8,10)</a></li>
+                            <li>
+                                <div>Type in the following command: ping espn.com and you should see an IP.</div>
+                                <!-- <div><img class="img-fluid" src="/images/PingESPN.PNG" /></div>-->
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        Let's check out your current machine's IP:
+                        <ul>
+                            <li>Open a command window or search for the program Command Prompt. See <a href="https://www.lifewire.com/how-to-open-command-prompt-2618089">How to open a command prompt (on Windows XP, 7,8,10)</a></li>
+                            <li>
+                                <div>Type in the following command: ipconfig /all.Look for the label IPv4 and this is your machine's IP address. </div>
+                                <!-- <div><img class="img-fluid" src="images/PingMyMachine.PNG" /></div>-->
+                            </li>
+                        </ul>
+                    </p>
+                    <p>Once you make your request, a response is returned to you of the espn.com.</p>
+                    <p>This response will contain web contents that you're requesting, this includes the web page, images, external files,etc....</p>
+                    <p>Your response can be pretty big pending on what you're requesting being returned. Since a response can be big, responses are broken down into packets.</p>
+                    <p>A packet contains important information about your request and response. The two most important bits of information are the IP address of the web server, the content (web page, images, external files) and the IP address of your computer.</p>
+                    <p>Since we have content that expands across globe, we need special devices like switches and routers to connect devices together so that we can share information around the internet. See <a href="https://www.youtube.com/watch?v=Ofjsh_E4HFY">Hub, Switch or Router? Network Devices Explained</a></p>
+                    <p>A switch is a smart device that connects together many different devices so they can act as a network. Sometimes simpler devices called 'hubs' are used.</p>
+
+                </div>
+                <div>
+                    <h1>How to create a web page</h1>
+                    <p>Web page formats (.html, .htm, server side pages (.aspx, .php,etc..)</p>
+                    <p>
+                        What is HTML?
+                        <ul>
+                            <li>Its a standard markup language for creating languages.</li>
+                            <li>HTML standards for Hyper Text Markup Language</li>
+                            <li>HTML uses elements and attributes to build a web page.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        What are Elements and Attributes?
+                        <ul>
+                            <li>
+                                Elements
+                                <ul>
+                                    <li>Elements are the building block of a web page. Typically referred to as "Tags", they are used to give instructions to your browser on how to handle them.</li>
+                                    <li>Elements are usually created with a start and end tag. Example: <foo></foo></li>
+                                    <li>Elements are non cast sensitive, but it is recommend you use lower case to define your elements.</li>
+                                    <li>Common elements are: HTML, BODY, H1,H2, P, A,IMG, Table,ul, ol</li>
+                                    <li>Elements can be left blank and they can be nested within each other.</li>
+                                    <li>Check out <a href="https://www.w3schools.com/html/html_elements.asp">HTML Elements</a> for more info.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Attributes
+                                <ul>
+                                    <li>Attributes defines the properties of an element.</li>
+                                    <li>
+                                        Attributes can be used to style an element or provide information about an element.
+                                        <div>
+                                            <div data-height="300" data-theme-id="23262" data-slug-hash="JJKeOm" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="JJKeOm" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/JJKeOm/">JJKeOm</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                            <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                        </div>
+                                    </li>
+                                    <li>Check out <a href="https://www.w3schools.com/html/html_attributes.asp">HTML Attributes</a> for more information.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h3>HTML Basic</h3>
+                        <ul>
+                            <li>Let's open up a online web editor, called <a href="https://plnkr.co/">Plunker</a></li>
+                            <li>
+                                DOCTYPE - all html documents must start with this tag. This tag defines the HTML version that you're using.
+                                <ul>
+                                    <li>
+                                        Definition: <!DOCTYPE html>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                After the DOCTYPE, we have a HTML tag. Every document must have it in order to properly display your web page.
+
+                            </li>
+                            <li>
+                                Within the HTML tags, we have two additional tags that are required: Head and Body.
+                                Head is not visible to end users, but its used to include external files and defined metadata about the document.
+                                Body is visble to end users and its where you added your content.
+
+                                <div data-height="300" data-theme-id="23262" data-slug-hash="GEqwBg" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="GEqwBg" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/GEqwBg/">GEqwBg</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h3>Common HTML elements</h3>
+                                <ul>
+                                    <li>
+                                        <h4>Headings</h4>
+                                        <ul>
+                                            <li>Used to display a heading for you website.</li>
+                                            <li>Ranges from H1 to H6, where H1 defines an important heading and H6 defines a less important heading</li>
+                                            <li><a href="https://www.w3schools.com/html/html_headings.asp">HTML Headings</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="BZzbYj" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Headings" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/BZzbYj/">HTML Headings</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Paragraphs</h4>
+                                        <ul>
+                                            <li>Used to display your content in paragraph format.</li>
+                                            <li>Ranges from H1 to H6, where H1 defines an important heading and H6 defines a less important heading</li>
+                                            <li><a href="https://www.w3schools.com/html/html_paragraphs.asp">HTML Paragraphs</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="weWOXW" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Paragraphs" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/weWOXW/">HTML Paragraphs</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Links</h4>
+                                        <ul>
+                                            <li>Used to link to different documents, websites, applications or content within the same page</li>
+
+                                            <li><a href="https://www.w3schools.com/html/html_links.asp">HTML Links</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="LLZaJa" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Links" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/LLZaJa/">HTML Links</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Images</h4>
+                                        <ul>
+                                            <li>Used to display images on a web page</li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        Attributes:
+                                                        <ul>
+                                                            <li>src - defines the location of the image</li>
+                                                            <li>width and height - defines the width and height of the image</li>
+                                                            <li>alt - displays a caption for an image.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="https://www.w3schools.com/html/html_images.asp">HTML Images</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="owLVmR" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Images" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/owLVmR/">HTML Images</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Tables</h4>
+                                        <ul>
+                                            <li>Good for display data in a grid, tabular data, used alot in display stats for team or player.</li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        Sub-Elements:
+                                                        <ul>
+                                                            <li>th - table header</li>
+                                                            <li>td - table column</li>
+                                                            <li>tr - table row. You can use table rows to replace table header.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="https://www.w3schools.com/html/html_tables.asp">HTML Tables</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="xrOeKB" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Tables" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/xrOeKB/">HTML Tables</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Lists</h4>
+                                        <ul>
+                                            <li>Good for display items in a list or steps on a page.</li>
+                                            <li>
+                                                <ul>
+                                                    <li>
+                                                        There are 2 common list types:
+                                                        <ul>
+                                                            <li>Unorder list - bullet points</li>
+                                                            <li>Sorted List - items listed by number or character</li>
+                                                            <li>
+
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="https://www.w3schools.com/html/html_lists.asp">HTML Lists</a></li>
+                                            <li>
+                                                <div data-height="300" data-theme-id="23262" data-slug-hash="rwLbeQ" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="HTML Lists" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/rwLbeQ/">HTML Lists</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                                <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <p>
+                        <h3>CSS</h3>
+                        <ul>
+                            <li>Stands for Cascading Style Sheets</li>
+                            <li>Used to make your pages look pretty</li>
+                            <li>CSS can be applied directly to elements using the style attribute.</li>
+                            <li>Every element has an style attribute.</li>
+                            <li>
+                                CSS can be added to your page in three different ways:
+                                <ul>
+                                    <li>Inlined - using style attribute on an element</li>
+                                    <li>Internal - using the style tag</li>
+                                    <li>External - using a .css file</li>
+                                    <li>
+                                        <div data-height="300" data-theme-id="23262" data-slug-hash="jwrRBz" data-default-tab="html,result" data-user="brandonmichaelhunter" data-embed-version="2" data-pen-title="CSS Intro" class="codepen">See the Pen <a href="https://codepen.io/brandonmichaelhunter/pen/jwrRBz/">CSS Intro</a> by Brandon M. Hunter (<a href="https://codepen.io/brandonmichaelhunter">@brandonmichaelhunter</a>) on <a href="https://codepen.io">CodePen</a>.</div>
+                                        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.w3schools.com/html/html_css.asp">HTML CSS</a></li>
+                        </ul>
+                    </p>
+
+                    <div>
+                        <h3>Let's build a page</h3>
+                        <ul>
+                            <li>We're going to create an "About Me" page, which will include:</li>
+                            <li>
+                                <ul>
+                                    <li>A picture of your choice.</li>
+                                    <li>A description of yourself</li>
+                                    <li>Education experience and any job experience</li>
+                                    <li>Links to your social media account(s)</li>
+                                    <li>A list of your favorite sites.</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
